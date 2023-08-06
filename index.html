@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="elements.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="content-wrapper">
+        <header>
+            <hr> <h1 class="f-title">Bundle & Save</h1> <hr>
+        </header>
+        <main>
+            <section >
+                <label class="container f-inter" id="one-pair" onclick="selectedOption(1)">
+                    <div class="choice">
+                        <div class="quantity">
+                            <p class="f-qty">1 Pair</p>
+                            <div class="price">
+                                <p class="f-price" id="one-pair-price">DKK 195.00</p>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <p class="f-offer">50% off</p>
+                        </div>
+                    </div>
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                    <table id="one-pair-option" class="hide">
+                        <tr>
+                            <td></td>
+                            <td><p class="f-table-text">Size</p></td>
+                            <td><p class="f-table-text">Color</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="f-table-text">#1</p></td>
+                            <td> 
+                                <select name="size" id="size"> 
+                                    <option value="S">S</option> 
+                                    <option value="M">M</option> 
+                                    <option value="L">L</option> 
+                                    <option value="XL">XL</option> 
+                                </select>
+                            </td>
+                            <td> 
+                                <select name="color" id="color"> 
+                                    <option value="Red">Red</option> 
+                                    <option value="Black">Black</option> 
+                                    <option value="Blue">Blue</option> 
+                                    <option value="Grey">Grey</option> 
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </label>
+            </section>
+            <section >
+                <label class="container container-selected f-metropolis" id="two-pair" onclick="selectedOption(2)">
+                    <div class="choice">
+                        <div class="quantity">
+                            <p class="f-qty">2 Pair</p>
+                            <div class="price">
+                                <p class="f-price" id="two-pair-price">DKK 345.00</p>
+                                <p class="f-mrp">DKK 195.00</p>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <p class="f-popular">Most Popular</p>
+                            <p class="f-offer">40% off</p>
+                        </div>
+                    </div>
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                    <table id="two-pair-option">
+                        <tr>
+                            <td></td>
+                            <td><p class="f-table-text">Size</p></td>
+                            <td><p class="f-table-text">Color</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="f-table-text">#1</p></td>
+                            <td> 
+                                <select name="size" id="size"> 
+                                    <option value="S">S</option> 
+                                    <option value="M">M</option> 
+                                    <option value="L">L</option> 
+                                    <option value="XL">XL</option> 
+                                </select>
+                            </td>
+                            <td> 
+                                <select name="color" id="color"> 
+                                    <option value="Red">Red</option> 
+                                    <option value="Black">Black</option> 
+                                    <option value="Blue">Blue</option> 
+                                    <option value="Grey">Grey</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="f-table-text">#2</p></td>
+                            <td> 
+                                <select name="size" id="size"> 
+                                    <option value="S">S</option> 
+                                    <option value="M">M</option> 
+                                    <option value="L">L</option> 
+                                    <option value="XL">XL</option> 
+                                </select>
+                            </td>
+                            <td> 
+                                <select name="color" id="color"> 
+                                    <option value="Red">Red</option> 
+                                    <option value="Black">Black</option> 
+                                    <option value="Blue">Blue</option> 
+                                    <option value="Grey">Grey</option> 
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </label>
+            </section>
+            <section >
+                <label class="container f-inter" id="three-pair" onclick="selectedOption(3)">
+                    <div class="choice">
+                        <div class="quantity">
+                            <p class="f-qty">3 Pair</p>
+                            <div class="price">
+                                <p class="f-price" id="three-pair-price">DKK 528.00</p>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <p class="f-offer">60% off</p>
+                        </div>
+                    </div>
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                    <table id="three-pair-option" class="hide">
+                        <tr>
+                            <td></td>
+                            <td><p class="f-table-text">Size</p></td>
+                            <td><p class="f-table-text">Color</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="f-table-text">#1</p></td>
+                            <td> 
+                                <select name="size" id="size"> 
+                                    <option value="S">S</option> 
+                                    <option value="M">M</option> 
+                                    <option value="L">L</option> 
+                                    <option value="XL">XL</option> 
+                                </select>
+                            </td>
+                            <td> 
+                                <select name="color" id="color"> 
+                                    <option value="Red">Red</option> 
+                                    <option value="Black">Black</option> 
+                                    <option value="Blue">Blue</option> 
+                                    <option value="Grey">Grey</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="f-table-text">#2</p></td>
+                            <td> 
+                                <select name="size" id="size"> 
+                                    <option value="S">S</option> 
+                                    <option value="M">M</option> 
+                                    <option value="L">L</option> 
+                                    <option value="XL">XL</option> 
+                                </select>
+                            </td>
+                            <td> 
+                                <select name="color" id="color"> 
+                                    <option value="Red">Red</option> 
+                                    <option value="Black">Black</option> 
+                                    <option value="Blue">Blue</option> 
+                                    <option value="Grey">Grey</option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="f-table-text">#3</p></td>
+                            <td> 
+                                <select name="size" id="size"> 
+                                    <option value="S">S</option> 
+                                    <option value="M">M</option> 
+                                    <option value="L">L</option> 
+                                    <option value="XL">XL</option> 
+                                </select>
+                            </td>
+                            <td> 
+                                <select name="color" id="color"> 
+                                    <option value="Red">Red</option> 
+                                    <option value="Black">Black</option> 
+                                    <option value="Blue">Blue</option> 
+                                    <option value="Grey">Grey</option> 
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </label>
+            </section>
+        </main>
+        <footer>
+            <div class="foot">
+                <p class="f-shipping">Free 2 Day Shipping</p>
+                <p class="f-total">Total : <b id="total">DKK 345.00</b></p>
+            </div>
+            <button>+ Add to Cart</button>
+            <div class="powered-text">
+                <p class="f-copyright">&#169;</p>
+                <p class="f-powered">Powered by Pumper</p>
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

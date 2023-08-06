@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #007F61;
+    --light_green: #F4FBF9;
+    --grey: #C8C8C8;
+    --dark_grey: #9F9F9F;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    height: 90vh;
+    width: 25vw;
+}
+
+@media (max-width: 1200px) {
+    .content-wrapper {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .content-wrapper {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 660px) {
+    .content-wrapper {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .content-wrapper {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .content-wrapper {
+        width: 90%;
+    }
+}
+
+/* --------------------------------------------------------------------------------- Header Start */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header hr {
+    width: 100%;
+    border: 0.9px solid var(--grey)
+}
+/* --------------------------------------------------------------------------------- Header End */
+
+/* --------------------------------------------------------------------------------- Main Start */
+main {
+    width: 100%;
+}
+
+.choice {
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.quantity {
+    width: 70%;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer {
+    width: 30%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table {
+    font-family: 'Inter', sans-serif;
+}
+
+td {
+    padding: 3px;
+}
+
+.hide {
+    display: none;
+}
+/* --------------------------------------------------------------------------------- Main End */
+
+/* --------------------------------------------------------------------------------- Footer Start */
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.powered-text {
+    display: flex;
+    justify-content: flex-end;
+}
+/* --------------------------------------------------------------------------------- Footer End */
+
+/* ------------------------------------------------------------------------------------------------------------- ELEMENTS */
+/* --------------------------------------------------------------------------------- Radio Input Start */
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    height: 14.5px;
+    width: 14.5px;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: var(--grey);
+  }
+  
+  /* When the radio button is checked */
+  .container input:checked ~ .checkmark {
+    border: 2px solid var(--green);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 2.5px;
+      left: 2px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green);
+  }
+
+  .container-selected {
+    border: 2px solid var(--green);
+    background-color: var(--light_green);
+  }
+/* --------------------------------------------------------------------------------- Radio End */
+
+/* --------------------------------------------------------------------------------- Dropdown Start */
+select {
+    /* styling */
+    border: thin solid var(--grey);
+    border-radius: 2px;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+  
+    /* reset */
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url('./arrow.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10%) center;
+}
+/* --------------------------------------------------------------------------------- Dropdown End */
+
+/* --------------------------------------------------------------------------------- Button Start */
+button {
+    height: 48px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: var(--green);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+/* --------------------------------------------------------------------------------- Button End */
+
+/* ------------------------------------------------------------------------------------------------------------- FONTS */
+.f-title {
+    width: 565px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--green);
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.f-qty {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.f-price {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.f-mrp {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: line-through;
+    letter-spacing: 0em;
+    color: var(--dark_grey);
+    padding-right: 20px;
+}
+
+.f-popular {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    color: var(--green);
+}
+
+.f-offer {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+.f-table-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+}
+
+.f-shipping {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: var(--green);
+}
+
+.f-total {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+.f-copyright {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+.f-powered {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+
+.f-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.f-metropolis {
+    font-family: 'Metropolis', sans-serif;
+}
